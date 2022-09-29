@@ -29,7 +29,12 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'lazy.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'flickity.pkgd.min.js' | asset_url }}" defer ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js" defer></script>
+  
     {{ content_for_header }}
 
     {%- liquid
